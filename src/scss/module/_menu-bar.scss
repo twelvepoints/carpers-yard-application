@@ -65,12 +65,9 @@
         }
 
         &:hover,
+        &:focus,
         &.active {
           color: $accent-color;
-        }
-        &:focus {
-          border-radius: 99px;
-          background-color: $custom-color-3;
         }
 
         // &.active {
