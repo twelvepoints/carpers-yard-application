@@ -1,14 +1,21 @@
 const swiperFeatured = new Swiper('.featured-carousel .swiper-container', {
-    
+    updateOnWindowResize: true,
+    observer: true,
     roundLengths: true,
     grabCursor: true,
     pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
     },
+    initialSlide: 0,
     spaceBetween: 8,
     slidesPerView: 1.15,
     breakpoints: {
+        768: {
+            slidesPerView: 2.5,
+            pagination: false,
+            clickable: true
+        },
         1024: {
             slidesPerView: 3,
             pagination: false,
@@ -18,15 +25,33 @@ const swiperFeatured = new Swiper('.featured-carousel .swiper-container', {
 });
 
 const swiperCard = new Swiper('.card-carousel .swiper-container', {
-    
+    updateOnWindowResize: true,
+    observer: true,
     roundLengths: true,
     grabCursor: true,
     freeModeMomentum: true,
+    initialSlide: 0,
     spaceBetween: 8,
     slidesPerView: 2.5,
     breakpoints: {
+        768: {
+            slidesPerView: 3.5,
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            clickable: true
+        },
         1024: {
             slidesPerView: 5,
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            clickable: true
+        },
+        1366: {
+            slidesPerView: 6,
             pagination: {
                 el: '.swiper-pagination',
                 dynamicBullets: true,

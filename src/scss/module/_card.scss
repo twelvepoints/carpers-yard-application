@@ -1,4 +1,14 @@
 .card {
+
+  &__link {
+    transition: all 0.15s linear;
+
+    &:hover,
+    &:focus {
+      background: rgba($primary-color,0.1);
+      border-radius: $border-radius;
+    }
+  }
   
   &__image {
     position: relative;

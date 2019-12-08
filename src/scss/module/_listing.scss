@@ -1,8 +1,18 @@
 .listing {
   position: relative;
-  display: flex;
-  align-items: center;
   margin-bottom: 24px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition: all 0.15s linear;
+
+    &:hover,
+    &:focus {
+      background: rgba($primary-color,0.1);
+      border-radius: $border-radius;
+    }
+  }
 
   &__image {
     margin-right: 16px;

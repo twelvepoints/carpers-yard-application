@@ -1,9 +1,13 @@
 .search-box {
   position: relative;
   margin-bottom: 24px;
+  position: sticky;
+  top: 16px;
+  z-index: 9996;
 
   @media (min-width: $break-large) {
     margin-bottom: 32px;
+    top: 24px;
   }
 
   input {
@@ -16,6 +20,7 @@
     border-radius: 99px;
     font-size: 20px;
     color: $custom-color-1;
+    outline: none;
   }
 
   i {
