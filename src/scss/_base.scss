@@ -1,0 +1,57 @@
+/*
+ *******************
+ * PAGE MAIN STYLE *
+ *******************
+*/
+
+
+// Make type normal across browsers
+*, html, body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $base-bg-color;
+  color: $base-font-color;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $heading-font-color;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+main {
+  padding: $pad-unit;
+  margin: 0 0 52px 0;
+
+  @media (min-width: $break-large) {
+    margin: 64px 0 0 0;
+    padding: $pad-unit-large;
+  }
+}
+
+.section-padding {
+  padding-bottom: calc(#{$pad-unit} * 2);
+
+  @media (min-width: $break-large) {
+    padding-bottom: calc(#{$pad-unit-large} * 2);
+  }
+}
+
+header {
+  @extend .section-padding;
+}

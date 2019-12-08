@@ -1,0 +1,16 @@
+.featured {
+  background: red;
+  height: 30vh;
+  border-radius: 4px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $border-radius;
+
+    @media screen and (min-width: $break-large) {
+      border-radius: $border-radius-large;
+    }
+  }
+}

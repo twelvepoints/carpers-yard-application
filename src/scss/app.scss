@@ -1,17 +1,31 @@
-@import "variables/media";
+/*--------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+@import "fonts";
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "base";
+@import "utilities";
 
-@import "mixin/media";
-
-@import "util/grid";
-
-@import "lib/normalize";
-
-@import "modifier/margin";
-
-@import 'base/base';
-@import 'base/fonts';
-
-@import 'module/cat';
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import 'module/_menu-bar';
+@import 'module/_listing';
+@import 'module/_star-rating';
 
 
+/*--------------------------------------------------------------
+# featured carousel
+--------------------------------------------------------------*/
 
+@import 'module/_featured-carousel';
+@import 'module/_featured';
+
+/*--------------------------------------------------------------
+# card carousel
+--------------------------------------------------------------*/
+
+@import 'module/_card-carousel';
+@import 'module/_card';

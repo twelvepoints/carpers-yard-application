@@ -1,0 +1,32 @@
+.card-carousel {
+  @extend .section-padding;
+
+  .swiper-container {
+    margin: 0 -16px;
+
+    @media screen and (min-width: $break-large) {
+      margin: 0 -32px;
+    }
+
+    .swiper-slide { 
+      
+      &:first-of-type {
+        margin-left: 16px !important;
+
+        @media screen and (min-width: $break-large) {
+          margin-left: 32px !important;
+        }
+      }
+      &:last-of-type {
+
+        .card {
+          margin-right: 16px !important;
+
+          @media screen and (min-width: $break-large) {
+            margin-right: 46px !important;
+          }
+        }
+      }
+    }
+  }
+}

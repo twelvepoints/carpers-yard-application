@@ -1,19 +1,31 @@
-<html lang="ru">
-<head>
-    <title>Boilerplate</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+<include>_head.html</include>
+
 <body>
-<include>_header.html</include>
-<div class="grid-row">
-    <div class="grid-col--5">
-        <div class="cat">
-            <img src="assets/img/cat.jpg" width="100" alt="">
-            <div class="cat__photo"></div>
-            <div class="cat__title">Cat</div>
-        </div>
+
+  <main>
+    <include>_header.html</include>
+    <include>_featured-carousel.html</include>
+    <include>_card-carousel.html</include>
+    <include>_card-carousel.html</include>
+    <include>_card-carousel.html</include>
+
+    <div class="card-carousel card-carousel--fisheries">
+      Fisheries Card carousel
     </div>
-</div>
-<a href="products.html">products.html</a>
-<include>_footer.html</include>
+
+    <div class="card-carousel card-carousel--articles">
+      Articles Card carousel
+    </div>
+  </main>
+
+  <!-- menu bar -->
+  <include>_menu-bar.html</include>
+
+  <!-- scripts -->
+  <include>_scripts.html</include>
+
 </body>
+
 </html>
