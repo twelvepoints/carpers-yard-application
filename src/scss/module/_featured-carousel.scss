@@ -2,7 +2,7 @@
   @extend .section-padding;
 
   .swiper-container {
-    margin: 0 -16px;
+    margin: 0 -24px;
 
     @media screen and (min-width: $break-large) {
       margin: 0 -32px;
@@ -11,7 +11,7 @@
     .swiper-slide { 
       
       &:first-of-type {
-        margin-left: 16px !important;
+        margin-left: 24px !important;
 
         @media screen and (min-width: $break-large) {
           margin-left: 32px !important;
@@ -20,10 +20,10 @@
       &:last-of-type {
 
         .featured {
-          margin-right: 16px !important;
+          margin-right: 32px !important;
 
           @media screen and (min-width: $break-large) {
-            margin-right: 46px !important;
+            margin-right: 62px !important;
           }
         }
       }

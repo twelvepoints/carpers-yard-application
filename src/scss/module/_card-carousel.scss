@@ -1,29 +1,54 @@
 .card-carousel {
   @extend .section-padding;
 
-  .swiper-container {
-    margin: 0 -16px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+  }
 
-    @media screen and (min-width: $break-large) {
+  &__heading {
+    font-size: 24px;
+
+    @media (min-width: $break-large) {
+      font-size: 32px;
+    }
+  }
+
+  &__link {
+    flex: 0 0 auto;
+    margin-left: 16px;
+    font-size: 80%;
+
+    @media (min-width: $break-large) {
+      font-size: 100%;
+    }
+  }
+
+  .swiper-container {
+    margin: 0 -24px;
+
+    @media (min-width: $break-large) {
       margin: 0 -32px;
     }
 
     .swiper-slide { 
       
       &:first-of-type {
-        margin-left: 16px !important;
+        margin-left: 24px !important;
 
-        @media screen and (min-width: $break-large) {
+        @media (min-width: $break-large) {
           margin-left: 32px !important;
         }
       }
       &:last-of-type {
 
         .card {
-          margin-right: 16px !important;
+          margin-right: 32px !important;
 
-          @media screen and (min-width: $break-large) {
-            margin-right: 46px !important;
+          @media (min-width: $break-large) {
+            margin-right: 54px !important;
           }
         }
       }
