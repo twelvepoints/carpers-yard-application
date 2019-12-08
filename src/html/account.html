@@ -5,7 +5,65 @@
 <body>
 
   <main>
-    Account
+
+    <include>_back-button.html</include>
+
+    <div class="account-info">
+      <img src="https://via.placeholder.com/80x80.png" alt="Profile Image" class="profile-image">
+      <div class="account-info__content">
+        <div class="name">Matt Perry</div>
+        <div class="email">matt.perry@originalobjective.com</div>
+      </div>
+    </div>
+
+    <div class="tabs-wrapper">
+      <ul class="nav-tabs">
+        <li class="active"><a href="#tab-favourites">Favourites</a></li>
+        <li class=""><a href="#tab-account">Account</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="tab-favourites" class="tab-pane active">
+          <h2>Videos</h2>
+          <div class="results-list">
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+          </div>
+          <h2>Fisheries</h2>
+          <div class="results-list">
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+          </div>
+          <h2>Fisheries</h2>
+          <div class="results-list">
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+            <include>_listing.html</include>
+          </div>
+        </div>
+        <div id="tab-account" class="tab-pane">
+          <p>Subscription Status: <a href="#">Active</a></p>
+          <p><a href="#" class="btn btn--hollow btn--full">Cancel Subscription</a></p>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <!-- menu bar -->

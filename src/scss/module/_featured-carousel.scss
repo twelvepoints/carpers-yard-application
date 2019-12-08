@@ -3,7 +3,8 @@
 
   .swiper-container {
     margin: 0 -24px;
-    overflow: visible;
+    overflow-y: visible;
+    overflow-x: hidden;
 
     @media screen and (min-width: $break-large) {
       margin: 0;

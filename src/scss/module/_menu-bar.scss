@@ -19,11 +19,13 @@
   }
 
   nav {
+    height: 54px;
 
     @media (min-width: $break-large) {
       display: flex;
       justify-content: center;
       align-items: center;
+      height: unset;
     }
 
     ul {

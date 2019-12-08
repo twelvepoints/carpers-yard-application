@@ -12,9 +12,15 @@
 # Components
 --------------------------------------------------------------*/
 @import 'module/_menu-bar';
-@import 'module/_listing';
 @import 'module/_star-rating';
 @import 'module/_favourite-button';
+@import 'module/_back-button';
+@import 'module/_tabs'; // account tabs
+@import 'module/_account-info';
+@import 'module/_results-list';
+@import 'module/_listing';
+@import 'module/_search-box';
+
 
 /*--------------------------------------------------------------
 # featured carousel
