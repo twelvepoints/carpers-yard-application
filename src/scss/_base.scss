@@ -42,12 +42,16 @@ a, a:visited {
 
 
 
+
+
+
+
 main {
   padding: $pad-unit;
   margin: 0 0 52px 0;
 
   @media (min-width: $break-large) {
-    margin: 64px 0 0 0;
+    margin: 0 0 0 100px;
     padding: $pad-unit-large;
   }
 }
@@ -61,5 +65,18 @@ main {
 }
 
 header {
-  @extend .section-padding;
+  text-align: center;
+  margin-bottom: $pad-unit;
+
+  @media (min-width: $break-large) {
+    margin-bottom: $pad-unit;
+  }
+
+  img {
+    height: 42px;
+
+    @media (min-width: $break-large) {
+      height: 64px;
+    }
+  }
 }

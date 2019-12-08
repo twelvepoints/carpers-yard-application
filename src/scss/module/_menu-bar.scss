@@ -7,11 +7,11 @@
   z-index: 9999;
 
   @media (min-width: $break-large) {
-    right: 0;
+    right: unset;
     top: 0;
-    bottom: unset;
+    bottom: 0;
     left: 0;
-    height: 64px;
+    width: 100px;
   }
 
   &__logo {
@@ -32,9 +32,10 @@
       padding: 5px;
 
       @media (min-width: $break-large) {
-        padding: 10px;
-        width: 420px;
+        padding: 30px 0;
+        height: 320px;
         justify-content: space-between;
+        flex-direction: column;
       }
 
       .nav-button {
@@ -42,21 +43,18 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 44px;
         height: 44px;
         transition: all 0.15s linear;
-
-        @media (min-width: $break-large) {
-          flex-direction: column;
-        }
 
         i {
           font-size: 24px;
         }
 
         &__label {
-          // hide
-          display: none;
+          display: block;
+          font-size: 9px;
 
           @media (min-width: $break-large) {
             display: block;
@@ -64,7 +62,8 @@
           }
         }
 
-        &:hover {
+        &:hover,
+        &.active {
           color: $accent-color;
         }
         &:focus {
@@ -72,15 +71,15 @@
           background-color: $custom-color-3;
         }
 
-        &.active {
-          border-radius: 99px;
-          background-color: $accent-color;
-          color: white;
+        // &.active {
+        //   border-radius: 99px;
+        //   background-color: $accent-color;
+        //   color: white;
 
-          i {
-            color: white;
-          }
-        }
+        //   i {
+        //     color: white;
+        //   }
+        // }
       }
     }
   }

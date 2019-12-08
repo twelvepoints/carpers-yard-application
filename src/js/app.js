@@ -1,5 +1,4 @@
 const swiperFeatured = new Swiper('.featured-carousel .swiper-container', {
-    updateOnWindowResize: true,
     roundLengths: true,
     grabCursor: true,
     pagination: {
@@ -21,7 +20,6 @@ const swiperFeatured = new Swiper('.featured-carousel .swiper-container', {
 });
 
 const swiperCard = new Swiper('.card-carousel .swiper-container', {
-    updateOnWindowResize: true,
     roundLengths: true,
     grabCursor: true,
     freeModeMomentum: true,

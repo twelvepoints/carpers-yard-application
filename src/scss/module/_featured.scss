@@ -1,7 +1,9 @@
 .featured {
-  background: red;
-  height: 30vh;
-  border-radius: 4px;
+  height: 200px;
+
+  @media (min-width: $break-large) {
+    height: 240px;
+  }
 
   img {
     width: 100%;
@@ -9,8 +11,27 @@
     object-fit: cover;
     border-radius: $border-radius;
 
-    @media screen and (min-width: $break-large) {
+    @media (min-width: $break-large) {
       border-radius: $border-radius-large;
     }
+  }
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: rgba($custom-color-1,0.6);
+    padding: 5px 8px;
+    border-radius: 99px;
+    font-size: 13px;
+  }
+
+  &__heading {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 16px;
+    font-size: 40px;
+    color: $primary-color;
   }
 }
