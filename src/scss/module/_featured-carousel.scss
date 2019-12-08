@@ -3,9 +3,10 @@
 
   .swiper-container {
     margin: 0 -24px;
+    overflow: visible;
 
     @media screen and (min-width: $break-large) {
-      margin: 0 -32px;
+      margin: 0;
     }
 
     .swiper-slide { 
@@ -14,7 +15,7 @@
         margin-left: 24px !important;
 
         @media screen and (min-width: $break-large) {
-          margin-left: 32px !important;
+          margin-left: 0 !important;
         }
       }
       &:last-of-type {
@@ -23,9 +24,26 @@
           margin-right: 32px !important;
 
           @media screen and (min-width: $break-large) {
-            margin-right: 62px !important;
+            margin-right: 0 !important;
           }
         }
+      }
+    }
+
+    .swiper-pagination {
+
+      @media screen and (min-width: $break-large) {
+        display: none;
+      }
+
+      &-bullets-dynamic {
+        transform: translate(-50%,32px);
+      }
+      &-bullet {
+        background: white;
+      }
+      &-bullet-active {
+        background: $accent-color;
       }
     }
   }

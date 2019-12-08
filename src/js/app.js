@@ -1,4 +1,5 @@
 const swiperFeatured = new Swiper('.featured-carousel .swiper-container', {
+    
     roundLengths: true,
     grabCursor: true,
     pagination: {
@@ -9,17 +10,15 @@ const swiperFeatured = new Swiper('.featured-carousel .swiper-container', {
     slidesPerView: 1.15,
     breakpoints: {
         1024: {
-            slidesPerView: 2.5,
-            pagination: {
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-            },
+            slidesPerView: 3,
+            pagination: false,
             clickable: true
         }
     }
 });
 
 const swiperCard = new Swiper('.card-carousel .swiper-container', {
+    
     roundLengths: true,
     grabCursor: true,
     freeModeMomentum: true,
@@ -27,7 +26,7 @@ const swiperCard = new Swiper('.card-carousel .swiper-container', {
     slidesPerView: 2.5,
     breakpoints: {
         1024: {
-            slidesPerView: 5.5,
+            slidesPerView: 5,
             pagination: {
                 el: '.swiper-pagination',
                 dynamicBullets: true,

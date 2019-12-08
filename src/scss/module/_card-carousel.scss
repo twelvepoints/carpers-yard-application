@@ -30,7 +30,7 @@
     margin: 0 -24px;
 
     @media (min-width: $break-large) {
-      margin: 0 -32px;
+      margin: 0;
     }
 
     .swiper-slide { 
@@ -38,17 +38,17 @@
       &:first-of-type {
         margin-left: 24px !important;
 
-        @media (min-width: $break-large) {
-          margin-left: 32px !important;
+        @media screen and (min-width: $break-large) {
+          margin-left: 0 !important;
         }
       }
       &:last-of-type {
 
-        .card {
+        .featured {
           margin-right: 32px !important;
 
-          @media (min-width: $break-large) {
-            margin-right: 54px !important;
+          @media screen and (min-width: $break-large) {
+            margin-right: 0 !important;
           }
         }
       }
