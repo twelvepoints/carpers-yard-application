@@ -75,6 +75,31 @@ p, li, ol {
 
 
 
+// fullwidth wrapper
+
+.fullwidth-wrapper {
+  margin: 0 -24px;
+
+  @media (min-width: $break-large) {
+    margin: 0 -32px;
+  }
+}
+
+
+
+
+
+// slider wrapper
+
+.slider-wrapper {
+  margin: 0 -24px;
+
+  @media (min-width: $break-large) {
+    margin: 0 -32px;
+  }
+}
+
+
 
 
 

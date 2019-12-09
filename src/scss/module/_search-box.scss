@@ -1,12 +1,11 @@
 .search-box {
   position: relative;
-  margin-bottom: 24px;
   position: sticky;
   top: 16px;
   z-index: 9996;
+  @extend .section-padding;
 
   @media (min-width: $break-large) {
-    margin-bottom: 32px;
     top: 24px;
   }
 
